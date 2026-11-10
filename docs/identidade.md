@@ -98,7 +98,7 @@ Um **poste de barbeiro** construído por código (sem modelo externo), com listr
 
 ## 8. Ícones (próxima etapa)
 
-Conjunto próprio de 10 ícones em traço de 1,5 px, com terminações cortadas na diagonal: tesoura, navalha, máquina, pente, barba, sobrancelha, cadeira, relógio, calendário e pacote. Serão desenhados após a aprovação do logotipo, para herdarem o mesmo corte.
+Conjunto próprio de 10 ícones em traço de 1,5 px, com cantos vivos (sem arredondar) e um detalhe em ouro por ícone: tesoura, navalha, máquina, pente, barba, sobrancelha, cadeira, relógio, calendário e pacote. Ficam em `components/icons/index.tsx` como componentes React. O traço herda a cor do texto (`currentColor`) e o detalhe usa a variável `--fo-accent`.
 
 ## 9. Direção de imagem
 
