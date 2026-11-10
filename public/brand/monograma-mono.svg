@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="fo-m-title">
+  <title id="fo-m-title">Ferro &amp; Ouro</title>
+  <!-- versão de uma cor: herda a cor do texto (currentColor) quando usada inline -->
+  <path d="M93.86 187.79 A88 88 0 0 1 93.86 12.21" fill="none" stroke="currentColor" stroke-width="4"/>
+  <path d="M106.14 12.21 A88 88 0 0 1 106.14 187.79" fill="none" stroke="currentColor" stroke-width="4"/>
+  <circle cx="100" cy="100" r="79" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="1"/>
+  <polygon points="70,50 87,50 87,150 70,138" fill="currentColor"/>
+  <polygon points="91,50 130,50 122,63 91,63" fill="currentColor"/>
+  <polygon points="91,84 122,84 114,97 91,97" fill="currentColor"/>
+  <circle cx="78.5" cy="124" r="3" fill="none" stroke="#0A0A0B" stroke-width="1.6"/>
+</svg>

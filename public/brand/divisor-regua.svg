@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 24" fill="none" aria-hidden="true">
+  <!-- régua graduada com losango central: separador de seções -->
+  <g stroke="#B08D57">
+    <path d="M0 16H270M330 16H600" stroke-opacity=".7" stroke-width="1"/>
+    <path d="M0 13.5H270M330 13.5H600" stroke-opacity=".55" stroke-width="5" stroke-dasharray="1 9"/>
+    <path d="M0 11H250" stroke-opacity=".8" stroke-width="10" stroke-dasharray="1.4 48.6"/>
+    <path d="M350 11H600" stroke-opacity=".8" stroke-width="10" stroke-dasharray="1.4 48.6"/>
+  </g>
+  <polygon points="300,5 307,12 300,19 293,12" fill="#B08D57"/>
+</svg>

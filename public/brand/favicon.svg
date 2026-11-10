@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="fo-iron" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1F2F4"/>
+      <stop offset=".45" stop-color="#9DA2AB"/>
+      <stop offset="1" stop-color="#3A3D43"/>
+    </linearGradient>
+    <linearGradient id="fo-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0DCAA"/>
+      <stop offset=".5" stop-color="#B08D57"/>
+      <stop offset="1" stop-color="#6F5530"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="#0A0A0B"/>
+  <g transform="translate(100 100) scale(.82) translate(-100 -100)">
+    <path d="M93.86 187.79 A88 88 0 0 1 93.86 12.21" fill="none" stroke="url(#fo-iron)" stroke-width="9"/>
+    <path d="M106.14 12.21 A88 88 0 0 1 106.14 187.79" fill="none" stroke="url(#fo-gold)" stroke-width="9"/>
+    <polygon points="68,48 88,48 88,152 68,139" fill="url(#fo-iron)"/>
+    <polygon points="92,48 132,48 123,64 92,64" fill="url(#fo-gold)"/>
+    <polygon points="92,84 124,84 116,99 92,99" fill="url(#fo-gold)"/>
+  </g>
+</svg>

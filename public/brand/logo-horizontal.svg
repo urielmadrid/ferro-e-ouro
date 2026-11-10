@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 120" role="img" aria-labelledby="fo-h-title">
+  <title id="fo-h-title">Ferro &amp; Ouro</title>
+  <defs>
+    <linearGradient id="fo-iron" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1F2F4"/>
+      <stop offset=".45" stop-color="#9DA2AB"/>
+      <stop offset="1" stop-color="#3A3D43"/>
+    </linearGradient>
+    <linearGradient id="fo-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0DCAA"/>
+      <stop offset=".5" stop-color="#B08D57"/>
+      <stop offset="1" stop-color="#6F5530"/>
+    </linearGradient>
+    <clipPath id="fo-clip-r"><rect x="-5" y="-5" width="50" height="61"/></clipPath>
+  </defs>
+
+  <!-- monograma (escala 0.6) -->
+  <g transform="scale(.6)">
+    <path d="M93.86 187.79 A88 88 0 0 1 93.86 12.21" fill="none" stroke="url(#fo-iron)" stroke-width="4"/>
+    <path d="M106.14 12.21 A88 88 0 0 1 106.14 187.79" fill="none" stroke="url(#fo-gold)" stroke-width="4"/>
+    <circle cx="100" cy="100" r="79" fill="none" stroke="#8A8F98" stroke-opacity=".45" stroke-width="1"/>
+    <polygon points="70,50 87,50 87,150 70,138" fill="url(#fo-iron)"/>
+    <line x1="74.5" y1="56" x2="74.5" y2="128" stroke="#FFFFFF" stroke-opacity=".35" stroke-width=".8"/>
+    <polygon points="91,50 130,50 122,63 91,63" fill="url(#fo-gold)"/>
+    <polygon points="91,84 122,84 114,97 91,97" fill="url(#fo-gold)"/>
+    <circle cx="78.5" cy="124" r="3" fill="#0A0A0B" stroke="#B08D57" stroke-width="1.2"/>
+  </g>
+
+  <!-- wordmark desenhado: FERRO ◆ OURO -->
+  <g fill="none" stroke-width="7" stroke-linejoin="miter" stroke-linecap="butt">
+    <g stroke="#C9CCD1" transform="translate(156 32)">
+      <path fill="#C9CCD1" stroke="none" d="M0 0H30L25 7H7V24.5H25L20 31.5H7V56H0Z"/>
+      <path transform="translate(40 0)" fill="#C9CCD1" stroke="none" d="M0 0H30L25 7H7V24.5H26L21 31.5H7V49H30L25 56H0Z"/>
+      <g transform="translate(80 0)">
+        <path d="M3.5 56V3.5H20A12 12 0 0 1 20 27.5H3.5"/>
+        <path clip-path="url(#fo-clip-r)" d="M16 28L31 58"/>
+      </g>
+      <g transform="translate(126 0)">
+        <path d="M3.5 56V3.5H20A12 12 0 0 1 20 27.5H3.5"/>
+        <path clip-path="url(#fo-clip-r)" d="M16 28L31 58"/>
+      </g>
+      <circle cx="200" cy="28" r="24.5"/>
+    </g>
+    <g stroke="#B08D57" transform="translate(440 32)">
+      <circle cx="28" cy="28" r="24.5"/>
+      <path transform="translate(66 0)" d="M3.5 0V38A14.5 14.5 0 0 0 32.5 38V0"/>
+      <g transform="translate(112 0)">
+        <path d="M3.5 56V3.5H20A12 12 0 0 1 20 27.5H3.5"/>
+        <path clip-path="url(#fo-clip-r)" d="M16 28L31 58"/>
+      </g>
+      <circle cx="186" cy="28" r="24.5"/>
+    </g>
+  </g>
+  <polygon points="412,52 418,60 412,68 406,60" fill="#B08D57"/>
+</svg>
