@@ -72,6 +72,91 @@ body::before {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%);
 }
 
+/* ---------- Animações ---------- */
+@keyframes subir {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* o poste anda exatamente um período das listras (84) e recomeça, sem emenda */
+@keyframes rolar-listras {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-84px);
+  }
+}
+
+@keyframes pulsar-linha {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+/* entrada em cascata: defina o atraso com style={{ "--atraso": "300ms" }} */
+.entrada {
+  opacity: 0;
+  animation: subir 900ms cubic-bezier(0.22, 1, 0.36, 1) var(--atraso, 0ms) both;
+}
+
+.entrada-escala {
+  opacity: 0;
+  animation: surgir 1200ms cubic-bezier(0.22, 1, 0.36, 1) var(--atraso, 0ms) both;
+}
+
+.listras-poste {
+  animation: rolar-listras 9s linear infinite;
+}
+
+.linha-rolar {
+  transform-origin: top;
+  animation: pulsar-linha 2.4s ease-in-out infinite;
+}
+
+/* aparece suavemente ao entrar na tela (componente components/ui/Revelar.tsx) */
+.revelar {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 900ms cubic-bezier(0.22, 1, 0.36, 1) var(--atraso, 0ms),
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1) var(--atraso, 0ms);
+}
+
+.revelar[data-visivel="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* sem JavaScript, o conteúdo fica visível desde o início */
+@media (scripting: none) {
+  .revelar {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* ---------- Acessibilidade ---------- */
 :focus-visible {
   outline: 2px solid var(--color-ouro-claro);
