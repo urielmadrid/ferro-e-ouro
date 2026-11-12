@@ -7,9 +7,16 @@ import { rodapeConteudo } from "@/data/rodape";
 const tituloColuna = "font-display text-xs uppercase tracking-[0.3em] text-ouro";
 
 export function Footer() {
-  const { slogan, rotuloNavegacao, rotuloVisita, rotuloAgendar, rotuloTopo, privacidade, nomeLegal } =
-    rodapeConteudo;
-  const ano = new Date().getFullYear();
+  const {
+    ano,
+    slogan,
+    rotuloNavegacao,
+    rotuloVisita,
+    rotuloAgendar,
+    rotuloTopo,
+    privacidade,
+    nomeLegal,
+  } = rodapeConteudo;
 
   return (
     <footer className="relative border-t border-grafite-claro bg-onix">

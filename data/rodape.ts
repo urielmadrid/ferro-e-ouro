@@ -7,6 +7,9 @@
 // ============================================================================
 
 export const rodapeConteudo = {
+  // Ano do copyright. Fixo de propósito: ler a data atual no servidor causa erro
+  // de build nas versões novas do Next.js. Atualize uma vez por ano.
+  ano: 2026,
   slogan: "Barbearia clássica. Corte afiado, ofício de verdade.",
   rotuloNavegacao: "Navegação",
   rotuloVisita: "Visite",
