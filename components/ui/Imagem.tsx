@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+// Posição da luz no quadro vazio; muda por `variacao` para os quadros não ficarem idênticos.
+const posicoesLuz = ["30% 20%", "75% 25%", "25% 80%", "80% 75%"];
+
 /**
  * Imagem do site.
  * - Com `src` preenchido: mostra a foto (arquivo em public/images/...).
@@ -22,12 +25,15 @@ export function Imagem({
   sizes,
   className = "",
   prioridade = false,
+  variacao = 0,
 }: ImagemConteudo & {
   /** Proporção CSS, ex.: "4 / 5" ou "3 / 2". */
   proporcao: string;
   sizes: string;
   className?: string;
   prioridade?: boolean;
+  /** Só afeta o quadro vazio: número de 0 a 3 que muda a posição da luz. */
+  variacao?: number;
 }) {
   return (
     <div
@@ -59,7 +65,9 @@ export function Imagem({
           aria-hidden="true"
           className="absolute inset-0 flex items-center justify-center"
           style={{
-            backgroundImage: "radial-gradient(ellipse at 30% 20%, #2a2c31, #111214 70%)",
+            backgroundImage: `radial-gradient(ellipse at ${
+              posicoesLuz[variacao % posicoesLuz.length]
+            }, #2a2c31, #111214 70%)`,
           }}
         >
           <div className="absolute inset-0 bg-[url('/brand/pattern-listras.svg')] opacity-60" />

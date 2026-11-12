@@ -1,3 +1,7 @@
+import { Contato } from "@/components/sections/Contato";
+import { Diferenciais } from "@/components/sections/Diferenciais";
+import { Footer } from "@/components/sections/Footer";
+import { Galeria } from "@/components/sections/Galeria";
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
 import { Profissionais } from "@/components/sections/Profissionais";
@@ -6,10 +10,7 @@ import { Sobre } from "@/components/sections/Sobre";
 
 // Seções PROVISÓRIAS: cada uma será substituída pela seção real nas próximas etapas.
 const secoes = [
-  { id: "galeria", titulo: "Galeria" },
-  { id: "diferenciais", titulo: "Diferenciais" },
   { id: "agendamento", titulo: "Agendamento" },
-  { id: "contato", titulo: "Contato" },
 ];
 
 export default function Home() {
@@ -21,6 +22,8 @@ export default function Home() {
         <Sobre />
         <Servicos />
         <Profissionais />
+        <Galeria />
+        <Diferenciais />
         {secoes.map((secao, i) => (
           <section
             key={secao.id}
@@ -34,7 +37,9 @@ export default function Home() {
             </p>
           </section>
         ))}
+        <Contato />
       </main>
+      <Footer />
     </>
   );
 }

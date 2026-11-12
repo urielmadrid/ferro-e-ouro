@@ -138,6 +138,46 @@ export function IconPacote(props: IconProps) {
   );
 }
 
+export function IconVapor(props: IconProps) {
+  return (
+    <Base {...props}>
+      <path d="M8 3C6.5 5 9.5 6 8 8.5M12 3C10.5 5 13.5 6 12 8.5M16 3C14.5 5 17.5 6 16 8.5" style={gold} />
+      <path d="M4 12H20V20.5H4Z" />
+      <path d="M4 16H20" />
+    </Base>
+  );
+}
+
+export function IconEscudo(props: IconProps) {
+  return (
+    <Base {...props}>
+      <path d="M12 3L19.5 6V12C19.5 16.5 16.5 19.5 12 21C7.5 19.5 4.5 16.5 4.5 12V6Z" />
+      <path d="M8.5 12L11 14.5L15.5 9.5" style={gold} />
+    </Base>
+  );
+}
+
+export function IconFrasco(props: IconProps) {
+  return (
+    <Base {...props}>
+      <path d="M9.5 3H14.5V6.5H9.5Z" style={gold} />
+      <path d="M10 6.5H14V9.5H10Z" />
+      <path d="M7.5 9.5H16.5V21H7.5Z" />
+      <path d="M10 13.5H14V17.5H10Z" style={gold} />
+    </Base>
+  );
+}
+
+export function IconPerfil(props: IconProps) {
+  return (
+    <Base {...props}>
+      <circle cx="12" cy="7.5" r="3.5" />
+      <path d="M5 21C5 17 8 14.5 12 14.5S19 17 19 21Z" />
+      <path d="M9.5 14.8L12 18L14.5 14.8" style={gold} />
+    </Base>
+  );
+}
+
 /** Mapa para buscar o ícone pelo nome (útil em data/services.seed.ts). */
 export const icones = {
   tesoura: IconTesoura,
@@ -150,6 +190,10 @@ export const icones = {
   relogio: IconRelogio,
   calendario: IconCalendario,
   pacote: IconPacote,
+  vapor: IconVapor,
+  escudo: IconEscudo,
+  frasco: IconFrasco,
+  perfil: IconPerfil,
 } as const;
 
 export type IconName = keyof typeof icones;
